@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ilyas Boutchich – CV</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --text-main: #111827;
+      --text-muted: #6b7280;
+      --border: #d1d5db;
+      --bg-light: #ffffff;
+      --accent1: #6366f1;
+      --accent2: #ec4899;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 24px;
+      font-family: "Inter", sans-serif;
+      background: #f3f4f6;
+      color: var(--text-main);
+      display: flex;
+      justify-content: center;
+    }
+
+    .page {
+      width: 100%;
+      max-width: 900px;
+      background: #ffffff;
+      border-radius: 16px;
+      border: 1px solid #e5e7eb;
+      padding: 24px 28px;
+    }
+
+    /* HEADER */
+
+    .header {
+      padding: 22px 26px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, #6366f1, #ec4899);
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .name {
+      font-size: 2rem;
+      font-weight: 700;
+    }
+
+    .roles span {
+      background: rgba(255, 255, 255, 0.24);
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .tagline {
+      margin-top: 8px;
+      max-width: 420px;
+      font-size: 0.92rem;
+    }
+
+    .site-pill {
+      padding: 6px 11px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.22);
+      backdrop-filter: blur(6px);
+      color: white;
+      text-decoration: none;
+      font-size: 0.8rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .cta-button {
+      padding: 6px 14px;
+      background: white;
+      color: #111827;
+      border-radius: 999px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    /* BODY */
+
+    .body {
+      margin-top: 24px;
+      display: grid;
+      grid-template-columns: 0.85fr 1.4fr;
+      gap: 20px;
+    }
+
+    .section {
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 14px 16px;
+      background: #ffffff;
+    }
+
+    .section-title {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--text-muted);
+      margin-bottom: 6px;
+      font-weight: 600;
+    }
+
+    .item {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 10px;
+    }
+
+    .item-title {
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    .item-subtitle {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    .item-bullets {
+      margin-top: 4px;
+      padding-left: 18px;
+      font-size: 0.82rem;
+      color: var(--text-muted);
+    }
+
+    .item-meta {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      white-space: nowrap;
+      text-align: right;
+    }
+
+    /* FOOTER */
+
+    .footer-note {
+      margin-top: 18px;
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      border-top: 1px dashed #d1d5db;
+      padding-top: 10px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    @media print {
+      body {
+        background: #ffffff;
+        padding: 0;
+      }
+      .page {
+        border: none;
+        border-radius: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+
+    <!-- HEADER -->
+    <header class="header">
+      <div>
+        <div class="name">Ilyas Boutchich</div>
+        <div class="roles" style="margin-top:6px; display:flex; gap:8px; flex-wrap:wrap;">
+          <span>Software Engineering Intern</span>
+          <span>Startup Builder / Full-Stack Developer</span>
+        </div>
+        <p class="tagline">
+          I build full-stack products end-to-end — backend, frontend, automation, and deployment — with a strong startup mindset.
+        </p>
+      </div>
+
+      <div style="text-align:right;">
+        <a class="site-pill" href="https://ilyasboutchich.com" target="_blank">
+          🔗 ilyasboutchich.com
+        </a>
+        <br><br>
+        <a class="cta-button" href="https://ilyasboutchich.com" target="_blank">View Portfolio ↗</a>
+        <p style="margin-top:8px; font-size:0.8rem; color:white;">
+          Toronto, Canada · <a href="mailto:ilyas0118n@gmail.com" style="color:white;">ilyas0118n@gmail.com</a>
+        </p>
+      </div>
+    </header>
+
+    <!-- BODY -->
+    <section class="body">
+
+      <!-- LEFT -->
+      <div>
+
+        <section class="section">
+          <div class="section-title">Profile</div>
+          <p style="font-size:0.88rem; color:var(--text-muted);">
+            Full-stack developer with experience building internal tools, automation pipelines, and early-stage startup MVPs.
+            Strong foundation in React, ASP.NET Core, CI/CD, and product thinking.
+          </p>
+        </section>
+
+        <section class="section">
+          <div class="section-title">Skills</div>
+
+          <p><strong>Languages & Frameworks:</strong><br>
+          <span style="color:var(--text-muted);">TypeScript, React, Next.js, Node.js, ASP.NET Core (C#), Python</span></p>
+
+          <p><strong>DevOps & Tools:</strong><br>
+          <span style="color:var(--text-muted);">Jenkins pipelines, Docker, CI/CD automation, MinIO (S3), SQL Server, PostgreSQL</span></p>
+
+          <p><strong>Strengths:</strong><br>
+          <span style="color:var(--text-muted);">Clean UI, problem solving, documentation, product mindset</span></p>
+        </section>
+
+        <section class="section">
+          <div class="section-title">Links</div>
+          <p><strong>Portfolio:</strong> <a href="https://ilyasboutchich.com">ilyasboutchich.com</a></p>
+          <p><strong>LinkedIn:</strong> ilyas boutchich</p>
+          <p><strong>GitHub:</strong> github.com/bout0047</p>
+        </section>
+
+      </div>
+
+      <!-- RIGHT -->
+      <div>
+
+        <section class="section">
+          <div class="section-title">Experience</div>
+
+          <div class="item">
+            <div>
+              <div class="item-title">Software Engineering Intern – Marjane Holding</div>
+              <div class="item-subtitle">Internal tools · CI/CD · Automation</div>
+              <ul class="item-bullets">
+                <li>Developed internal ASP.NET Core + React apps used by teams.</li>
+                <li>Built **Jenkins pipelines** to automatically build, test, and deploy apps from internal sources.</li>
+                <li>Created **multi-stage automation** (build → test → deploy) with environment variables & credentials.</li>
+                <li>Integrated Jenkins with internal servers & MinIO, eliminating manual deployments.</li>
+              </ul>
+            </div>
+            <div class="item-meta">Casablanca, MA<br>2023</div>
+          </div>
+
+          <div class="item">
+            <div>
+              <div class="item-title">Founder / Full-Stack Builder – Verimedix</div>
+              <div class="item-subtitle">Medicine traceability platform</div>
+              <ul class="item-bullets">
+                <li>Designed dashboards for pharmacies, regulators, and manufacturers.</li>
+                <li>Defined architecture using NFC tags, IoT sensors, and secure web portals.</li>
+                <li>Built prototypes, MVP scope, and investor materials.</li>
+              </ul>
+            </div>
+            <div class="item-meta">Remote<br>2024 – Present</div>
+          </div>
+
+        </section>
+
+        <section class="section">
+          <div class="section-title">Projects</div>
+
+          <div class="item">
+            <div>
+              <div class="item-title">Portfolio Website</div>
+              <div class="item-subtitle">Next.js · Responsive · Live</div>
+              <ul class="item-bullets">
+                <li>Central hub for projects, experiments, and demos.</li>
+              </ul>
+            </div>
+            <div class="item-meta">2025</div>
+          </div>
+
+          <div class="item">
+            <div>
+              <div class="item-title">Secure MinIO Frontend</div>
+              <div class="item-subtitle">React · JWT · RBAC</div>
+              <ul class="item-bullets">
+                <li>Custom UI for uploading, tagging, and managing internal files.</li>
+              </ul>
+            </div>
+            <div class="item-meta">2023</div>
+          </div>
+
+        </section>
+
+        <section class="section">
+          <div class="section-title">Education</div>
+
+          <div class="item">
+            <div>
+              <div class="item-title">ICT / Software Engineering (BSc – ongoing)</div>
+              <div class="item-subtitle">Algorithms · Databases · Web Development</div>
+            </div>
+            <div class="item-meta">Saitama University<br>HZ University of Applied Sciences</div>
+          </div>
+
+        </section>
+
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <div class="footer-note">
+      <span>Short CV version — for full portfolio:</span>
+      <strong>ilyasboutchich.com</strong>
+    </div>
+
+  </main>
+</body>
+</html>
